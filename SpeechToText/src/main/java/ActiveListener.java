@@ -13,8 +13,11 @@ import java.util.logging.Logger;
 public class ActiveListener implements Listener{
 
     private LiveSpeechRecognizer recognizer;
-    private Configuration configuration;
+
+    private final Configuration configuration;
+
     private final Logger logger = Logger.getLogger(getClass().getName());
+
     private final ExecutorService eventsExecutorService = Executors.newFixedThreadPool(2);
 
 
@@ -27,18 +30,18 @@ public class ActiveListener implements Listener{
 
     private boolean resourcesThreadRunning;
 
-    private Writer writer;
+    private final Writer writer;
 
     @Override
     public void setSTTModel() {
-        configuration.setAcousticModelPath("file:SpeechToText/src/main/java/frstt/cmusphinx-fr-ptm-8khz-5.2");
-        configuration.setDictionaryPath("file:SpeechToText/src/main/java/frstt/fr.dict");
-        configuration.setLanguageModelPath("file:SpeechToText/src/main/java/frstt/fr-small.lm.bin");
+        configuration.setAcousticModelPath("file:SpeechToText/src/main/resources/cmusphinx-fr-ptm-8khz-5.2");
+        configuration.setDictionaryPath("file:SpeechToText/src/main/resources/fr.dict");
+        configuration.setLanguageModelPath("file:SpeechToText/src/main/resources/fr-small.lm.bin");
     }
 
     @Override
     public void setGrammar() {
-        // Not used for the moment.
+        // Not used at the moment.
         // configuration.setGrammarPath("");
         // configuration.setGrammarName("");
         // configuration.setUseGrammar(true);
@@ -76,17 +79,12 @@ public class ActiveListener implements Listener{
                             if (speechResult == null)
                                 logger.log(Level.INFO, "I can't understand what you said.\n");
                             else {
-
                                 //Get the hypothesis
                                 speechRecognitionResult = speechResult.getHypothesis();
-
-                                //Call the appropriate method
                                 writer.print(speechRecognitionResult);
-                                writer.print("test : "+ speechResult.getResult().getBestFinalResultNoFiller());
-
                             }
                         } else
-                            logger.log(Level.INFO, "Ingoring Speech Recognition Results...");
+                            logger.log(Level.INFO, "Ignoring Speech Recognition Results...");
 
                     }
                 } catch (Exception ex) {
