@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:default="http:///schemas/default/_a_f8QLrREe-DKO6kyh3G0g/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http:///schemas/default/_a_f8QLrREe-DKO6kyh3G0g/0 default.profile.uml#_bAgB17rREe-DKO6kyh3G0g">
+  <uml:Model xmi:id="_a_bq0LrREe-DKO6kyh3G0g" name="handicap">
+    <eAnnotations xmi:id="_a_bq0brREe-DKO6kyh3G0g" source="Objing">
+      <contents xmi:type="uml:Property" xmi:id="_a_bq0rrREe-DKO6kyh3G0g" name="exporterVersion">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_a_bq07rREe-DKO6kyh3G0g" value="3.0.0"/>
+      </contents>
+      <contents xmi:type="uml:Property" xmi:id="_a_bq1LrREe-DKO6kyh3G0g" name="isRoundTrip"/>
+    </eAnnotations>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_a_bq1brREe-DKO6kyh3G0g" name="Listener" isAbstract="true">
+      <ownedComment xmi:id="_a_bq1rrREe-DKO6kyh3G0g">
+        <eAnnotations xmi:id="_a_bq17rREe-DKO6kyh3G0g" source="Objing">
+          <contents xmi:type="uml:Property" xmi:id="_a_bq2LrREe-DKO6kyh3G0g" name="NoteType_Name">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_a_bq2brREe-DKO6kyh3G0g" value="description"/>
+          </contents>
+        </eAnnotations>
+        <body>&lt;Enter note text here></body>
+      </ownedComment>
+      <ownedOperation xmi:id="_a_bq2rrREe-DKO6kyh3G0g" name="setSTTModel" visibility="public"/>
+      <ownedOperation xmi:id="_a_bq27rREe-DKO6kyh3G0g" name="setGrammar" visibility="public"/>
+      <ownedOperation xmi:id="_a_bq3LrREe-DKO6kyh3G0g" name="startSpeechRecognition" visibility="public"/>
+      <ownedOperation xmi:id="_a_bq3brREe-DKO6kyh3G0g" name="startResourcesThread" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_a_bq3rrREe-DKO6kyh3G0g" name="PassiveListener" clientDependency="_a_bq57rREe-DKO6kyh3G0g">
+      <ownedAttribute xmi:id="_a_bq37rREe-DKO6kyh3G0g" name="notify" visibility="public" type="_a_brT7rREe-DKO6kyh3G0g" isUnique="false" association="_a_bq6LrREe-DKO6kyh3G0g">
+        <eAnnotations xmi:id="_a_bq4LrREe-DKO6kyh3G0g" source="Objing">
+          <contents xmi:type="uml:Property" xmi:id="_a_bq4brREe-DKO6kyh3G0g" name="MultiMin">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_a_bq4rrREe-DKO6kyh3G0g" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_a_bq47rREe-DKO6kyh3G0g" name="MultiMax">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_a_bq5LrREe-DKO6kyh3G0g" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_a_bq5brREe-DKO6kyh3G0g" name="AccessMode">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_a_bq5rrREe-DKO6kyh3G0g" value="no_access"/>
+          </contents>
+        </eAnnotations>
+      </ownedAttribute>
+      <interfaceRealization xmi:id="_a_bq57rREe-DKO6kyh3G0g" name="InterfaceRealization" supplier="_a_bq1brREe-DKO6kyh3G0g" client="_a_bq3rrREe-DKO6kyh3G0g" contract="_a_bq1brREe-DKO6kyh3G0g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_a_bq6LrREe-DKO6kyh3G0g" memberEnd="_a_bq37rREe-DKO6kyh3G0g _a_bq6brREe-DKO6kyh3G0g">
+      <ownedEnd xmi:id="_a_bq6brREe-DKO6kyh3G0g" visibility="public" type="_a_bq3rrREe-DKO6kyh3G0g" isUnique="false" association="_a_bq6LrREe-DKO6kyh3G0g">
+        <eAnnotations xmi:id="_a_bq6rrREe-DKO6kyh3G0g" source="Objing">
+          <contents xmi:type="uml:Property" xmi:id="_a_bq67rREe-DKO6kyh3G0g" name="MultiMin">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_a_bq7LrREe-DKO6kyh3G0g" value="0"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_a_bq7brREe-DKO6kyh3G0g" name="MultiMax">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_a_bq7rrREe-DKO6kyh3G0g" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_a_bq77rREe-DKO6kyh3G0g" name="AccessMode">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_a_bq8LrREe-DKO6kyh3G0g" value="no_access"/>
+          </contents>
+        </eAnnotations>
+        <ownedComment xmi:id="_a_bq8brREe-DKO6kyh3G0g">
+          <eAnnotations xmi:id="_a_bq8rrREe-DKO6kyh3G0g" source="Objing">
+            <contents xmi:type="uml:Property" xmi:id="_a_bq87rREe-DKO6kyh3G0g" name="NoteType_Name">
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_a_bq9LrREe-DKO6kyh3G0g" value="description"/>
+            </contents>
+          </eAnnotations>
+          <body>&lt;Enter note text here></body>
+        </ownedComment>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_a_bq9brREe-DKO6kyh3G0g"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_a_bq9rrREe-DKO6kyh3G0g" name="ActiveListener" clientDependency="_a_brQ7rREe-DKO6kyh3G0g">
+      <ownedAttribute xmi:id="_a_bq97rREe-DKO6kyh3G0g" name="writer" visibility="public" type="_a_brULrREe-DKO6kyh3G0g" isUnique="false" association="_a_brRbrREe-DKO6kyh3G0g">
+        <eAnnotations xmi:id="_a_bq-LrREe-DKO6kyh3G0g" source="Objing">
+          <contents xmi:type="uml:Property" xmi:id="_a_bq-brREe-DKO6kyh3G0g" name="MultiMin">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_a_bq-rrREe-DKO6kyh3G0g" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_a_bq-7rREe-DKO6kyh3G0g" name="MultiMax">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_a_bq_LrREe-DKO6kyh3G0g" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_a_bq_brREe-DKO6kyh3G0g" name="AccessMode">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_a_bq_rrREe-DKO6kyh3G0g" value="no_access"/>
+          </contents>
+        </eAnnotations>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_a_bq_7rREe-DKO6kyh3G0g" name="recognizer" visibility="private" type="_a_brVrrREe-DKO6kyh3G0g" isUnique="false">
+        <eAnnotations xmi:id="_a_brALrREe-DKO6kyh3G0g" source="Objing">
+          <contents xmi:type="uml:Property" xmi:id="_a_brAbrREe-DKO6kyh3G0g" name="MultiMin">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_a_brArrREe-DKO6kyh3G0g" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_a_brA7rREe-DKO6kyh3G0g" name="MultiMax">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_a_brBLrREe-DKO6kyh3G0g" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_a_brBbrREe-DKO6kyh3G0g" name="AccessMode">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_a_brBrrREe-DKO6kyh3G0g" value="no_access"/>
+          </contents>
+        </eAnnotations>
+        <ownedComment xmi:id="_a_brB7rREe-DKO6kyh3G0g">
+          <eAnnotations xmi:id="_a_brCLrREe-DKO6kyh3G0g" source="Objing">
+            <contents xmi:type="uml:Property" xmi:id="_a_brCbrREe-DKO6kyh3G0g" name="NoteType_Name">
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_a_brCrrREe-DKO6kyh3G0g" value="description"/>
+            </contents>
+          </eAnnotations>
+          <body>&lt;Enter note text here></body>
+        </ownedComment>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_a_brC7rREe-DKO6kyh3G0g" name="configuration" visibility="private" type="_a_brV7rREe-DKO6kyh3G0g" isUnique="false">
+        <eAnnotations xmi:id="_a_brDLrREe-DKO6kyh3G0g" source="Objing">
+          <contents xmi:type="uml:Property" xmi:id="_a_brDbrREe-DKO6kyh3G0g" name="MultiMin">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_a_brDrrREe-DKO6kyh3G0g" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_a_brD7rREe-DKO6kyh3G0g" name="MultiMax">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_a_brELrREe-DKO6kyh3G0g" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_a_brEbrREe-DKO6kyh3G0g" name="AccessMode">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_a_brErrREe-DKO6kyh3G0g" value="no_access"/>
+          </contents>
+        </eAnnotations>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_a_brE7rREe-DKO6kyh3G0g" name="eventsExecutorService" visibility="private" type="_a_brWLrREe-DKO6kyh3G0g" isUnique="false">
+        <eAnnotations xmi:id="_a_brFLrREe-DKO6kyh3G0g" source="Objing">
+          <contents xmi:type="uml:Property" xmi:id="_a_brFbrREe-DKO6kyh3G0g" name="MultiMin">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_a_brFrrREe-DKO6kyh3G0g" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_a_brF7rREe-DKO6kyh3G0g" name="MultiMax">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_a_brGLrREe-DKO6kyh3G0g" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_a_brGbrREe-DKO6kyh3G0g" name="AccessMode">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_a_brGrrREe-DKO6kyh3G0g" value="no_access"/>
+          </contents>
+        </eAnnotations>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_a_brG7rREe-DKO6kyh3G0g" name="ignoreSpeechRecognitionResults" visibility="private" isUnique="false">
+        <eAnnotations xmi:id="_a_brHLrREe-DKO6kyh3G0g" source="Objing">
+          <contents xmi:type="uml:Property" xmi:id="_a_brHbrREe-DKO6kyh3G0g" name="MultiMin">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_a_brHrrREe-DKO6kyh3G0g" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_a_brH7rREe-DKO6kyh3G0g" name="MultiMax">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_a_brILrREe-DKO6kyh3G0g" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_a_brIbrREe-DKO6kyh3G0g" name="AccessMode">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_a_brIrrREe-DKO6kyh3G0g" value="no_access"/>
+          </contents>
+        </eAnnotations>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_a_brI7rREe-DKO6kyh3G0g" name="speechRecognizerThreadRunning" visibility="private" isUnique="false">
+        <eAnnotations xmi:id="_a_brJLrREe-DKO6kyh3G0g" source="Objing">
+          <contents xmi:type="uml:Property" xmi:id="_a_brJbrREe-DKO6kyh3G0g" name="MultiMin">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_a_brJrrREe-DKO6kyh3G0g" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_a_brJ7rREe-DKO6kyh3G0g" name="MultiMax">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_a_brKLrREe-DKO6kyh3G0g" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_a_brKbrREe-DKO6kyh3G0g" name="AccessMode">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_a_brKrrREe-DKO6kyh3G0g" value="no_access"/>
+          </contents>
+        </eAnnotations>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_a_brK7rREe-DKO6kyh3G0g" name="speechRecognitionResult" visibility="private" isUnique="false">
+        <eAnnotations xmi:id="_a_brLLrREe-DKO6kyh3G0g" source="Objing">
+          <contents xmi:type="uml:Property" xmi:id="_a_brLbrREe-DKO6kyh3G0g" name="MultiMin">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_a_brLrrREe-DKO6kyh3G0g" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_a_brL7rREe-DKO6kyh3G0g" name="MultiMax">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_a_brMLrREe-DKO6kyh3G0g" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_a_brMbrREe-DKO6kyh3G0g" name="AccessMode">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_a_brMrrREe-DKO6kyh3G0g" value="no_access"/>
+          </contents>
+        </eAnnotations>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_a_brM7rREe-DKO6kyh3G0g" name="resourcesThreadRunning" visibility="private" isUnique="false">
+        <eAnnotations xmi:id="_a_brNLrREe-DKO6kyh3G0g" source="Objing">
+          <contents xmi:type="uml:Property" xmi:id="_a_brNbrREe-DKO6kyh3G0g" name="MultiMin">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_a_brNrrREe-DKO6kyh3G0g" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_a_brN7rREe-DKO6kyh3G0g" name="MultiMax">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_a_brOLrREe-DKO6kyh3G0g" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_a_brObrREe-DKO6kyh3G0g" name="AccessMode">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_a_brOrrREe-DKO6kyh3G0g" value="no_access"/>
+          </contents>
+        </eAnnotations>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_a_brO7rREe-DKO6kyh3G0g" name="writer" visibility="private" type="_a_brULrREe-DKO6kyh3G0g" isUnique="false">
+        <eAnnotations xmi:id="_a_brPLrREe-DKO6kyh3G0g" source="Objing">
+          <contents xmi:type="uml:Property" xmi:id="_a_brPbrREe-DKO6kyh3G0g" name="MultiMin">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_a_brPrrREe-DKO6kyh3G0g" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_a_brP7rREe-DKO6kyh3G0g" name="MultiMax">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_a_brQLrREe-DKO6kyh3G0g" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_a_brQbrREe-DKO6kyh3G0g" name="AccessMode">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_a_brQrrREe-DKO6kyh3G0g" value="no_access"/>
+          </contents>
+        </eAnnotations>
+      </ownedAttribute>
+      <interfaceRealization xmi:id="_a_brQ7rREe-DKO6kyh3G0g" name="InterfaceRealization" supplier="_a_bq1brREe-DKO6kyh3G0g" client="_a_bq9rrREe-DKO6kyh3G0g" contract="_a_bq1brREe-DKO6kyh3G0g"/>
+      <ownedOperation xmi:id="_a_brRLrREe-DKO6kyh3G0g" name="ActiveListener" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_a_brRbrREe-DKO6kyh3G0g" memberEnd="_a_bq97rREe-DKO6kyh3G0g _a_brRrrREe-DKO6kyh3G0g">
+      <ownedEnd xmi:id="_a_brRrrREe-DKO6kyh3G0g" visibility="public" type="_a_bq9rrREe-DKO6kyh3G0g" isUnique="false" association="_a_brRbrREe-DKO6kyh3G0g">
+        <eAnnotations xmi:id="_a_brR7rREe-DKO6kyh3G0g" source="Objing">
+          <contents xmi:type="uml:Property" xmi:id="_a_brSLrREe-DKO6kyh3G0g" name="MultiMin">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_a_brSbrREe-DKO6kyh3G0g" value="0"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_a_brSrrREe-DKO6kyh3G0g" name="MultiMax">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_a_brS7rREe-DKO6kyh3G0g" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_a_brTLrREe-DKO6kyh3G0g" name="AccessMode">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_a_brTbrREe-DKO6kyh3G0g" value="no_access"/>
+          </contents>
+        </eAnnotations>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_a_brTrrREe-DKO6kyh3G0g"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_a_brT7rREe-DKO6kyh3G0g" name="Notify"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_a_brULrREe-DKO6kyh3G0g" name="Writer">
+      <ownedOperation xmi:id="_a_brUbrREe-DKO6kyh3G0g" name="print" visibility="public">
+        <ownedParameter xmi:id="_a_brUrrREe-DKO6kyh3G0g" name="message" isUnique="false">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_a_brU7rREe-DKO6kyh3G0g" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_a_brVLrREe-DKO6kyh3G0g" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_a_brVbrREe-DKO6kyh3G0g" value=""/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_a_brVrrREe-DKO6kyh3G0g" name="LiveSpeechRecognizer"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_a_brV7rREe-DKO6kyh3G0g" name="Configuration"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_a_brWLrREe-DKO6kyh3G0g" name="ExecutorService"/>
+    <packagedElement xmi:type="uml:StateMachine" xmi:id="_a_brWbrREe-DKO6kyh3G0g" name="State Machine">
+      <region xmi:id="_a_brWrrREe-DKO6kyh3G0g">
+        <subvertex xmi:type="uml:Pseudostate" xmi:id="_a_brW7rREe-DKO6kyh3G0g" name="Initial State"/>
+        <subvertex xmi:type="uml:State" xmi:id="_a_brXLrREe-DKO6kyh3G0g" name="En ecoute"/>
+        <subvertex xmi:type="uml:State" xmi:id="_a_brXbrREe-DKO6kyh3G0g" name="Notifier"/>
+        <subvertex xmi:type="uml:State" xmi:id="_a_brXrrREe-DKO6kyh3G0g" name="Erreur"/>
+        <transition xmi:id="_a_brX7rREe-DKO6kyh3G0g" name="Transition" source="_a_brW7rREe-DKO6kyh3G0g" target="_a_brXLrREe-DKO6kyh3G0g"/>
+        <transition xmi:id="_a_brYLrREe-DKO6kyh3G0g" name="Transition" source="_a_brXLrREe-DKO6kyh3G0g" target="_a_brXbrREe-DKO6kyh3G0g">
+          <eAnnotations xmi:id="_a_brYbrREe-DKO6kyh3G0g" source="Objing">
+            <contents xmi:type="uml:Property" xmi:id="_a_brYrrREe-DKO6kyh3G0g" name="ReceivedEvent">
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_a_brY7rREe-DKO6kyh3G0g" value="Détecter bruit"/>
+            </contents>
+          </eAnnotations>
+        </transition>
+        <transition xmi:id="_a_brZLrREe-DKO6kyh3G0g" name="Transition2" source="_a_brXLrREe-DKO6kyh3G0g" target="_a_brXrrREe-DKO6kyh3G0g">
+          <eAnnotations xmi:id="_a_brZbrREe-DKO6kyh3G0g" source="Objing">
+            <contents xmi:type="uml:Property" xmi:id="_a_brZrrREe-DKO6kyh3G0g" name="ReceivedEvent">
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_a_brZ7rREe-DKO6kyh3G0g" value="Panne"/>
+            </contents>
+          </eAnnotations>
+        </transition>
+        <transition xmi:id="_a_braLrREe-DKO6kyh3G0g" name="Transition" source="_a_brXbrREe-DKO6kyh3G0g" target="_a_brXLrREe-DKO6kyh3G0g">
+          <eAnnotations xmi:id="_a_brabrREe-DKO6kyh3G0g" source="Objing">
+            <contents xmi:type="uml:Property" xmi:id="_a_brarrREe-DKO6kyh3G0g" name="ReceivedEvent">
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_a_bra7rREe-DKO6kyh3G0g" value="Ecouter"/>
+            </contents>
+          </eAnnotations>
+        </transition>
+        <transition xmi:id="_a_brbLrREe-DKO6kyh3G0g" name="Transition1" source="_a_brXbrREe-DKO6kyh3G0g" target="_a_brXrrREe-DKO6kyh3G0g">
+          <eAnnotations xmi:id="_a_brbbrREe-DKO6kyh3G0g" source="Objing">
+            <contents xmi:type="uml:Property" xmi:id="_a_brbrrREe-DKO6kyh3G0g" name="ReceivedEvent">
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_a_brb7rREe-DKO6kyh3G0g" value="Panne"/>
+            </contents>
+          </eAnnotations>
+        </transition>
+        <transition xmi:id="_a_brcLrREe-DKO6kyh3G0g" name="Transition1" source="_a_brXrrREe-DKO6kyh3G0g" target="_a_brXLrREe-DKO6kyh3G0g">
+          <eAnnotations xmi:id="_a_brcbrREe-DKO6kyh3G0g" source="Objing">
+            <contents xmi:type="uml:Property" xmi:id="_a_brcrrREe-DKO6kyh3G0g" name="ReceivedEvent">
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_a_brc7rREe-DKO6kyh3G0g" value="Ecouter"/>
+            </contents>
+          </eAnnotations>
+        </transition>
+      </region>
+    </packagedElement>
+    <packagedElement xmi:type="uml:StateMachine" xmi:id="_a_brdLrREe-DKO6kyh3G0g" name="State Machine1">
+      <region xmi:id="_a_brdbrREe-DKO6kyh3G0g">
+        <subvertex xmi:type="uml:Pseudostate" xmi:id="_a_brdrrREe-DKO6kyh3G0g" name="Initial State"/>
+        <subvertex xmi:type="uml:FinalState" xmi:id="_a_brd7rREe-DKO6kyh3G0g" name="Final State"/>
+        <subvertex xmi:type="uml:State" xmi:id="_a_breLrREe-DKO6kyh3G0g" name="Arret"/>
+        <subvertex xmi:type="uml:State" xmi:id="_a_brebrREe-DKO6kyh3G0g" name="En écoute"/>
+        <subvertex xmi:type="uml:State" xmi:id="_a_brerrREe-DKO6kyh3G0g" name="En retranscription"/>
+        <subvertex xmi:type="uml:State" xmi:id="_a_bre7rREe-DKO6kyh3G0g" name="Erreur"/>
+        <transition xmi:id="_a_brfLrREe-DKO6kyh3G0g" name="Transition" source="_a_brdrrREe-DKO6kyh3G0g" target="_a_breLrREe-DKO6kyh3G0g"/>
+        <transition xmi:id="_a_brfbrREe-DKO6kyh3G0g" name="Transition" source="_a_breLrREe-DKO6kyh3G0g" target="_a_brd7rREe-DKO6kyh3G0g"/>
+        <transition xmi:id="_a_brfrrREe-DKO6kyh3G0g" name="Transition1" source="_a_breLrREe-DKO6kyh3G0g" target="_a_brebrREe-DKO6kyh3G0g">
+          <eAnnotations xmi:id="_a_brf7rREe-DKO6kyh3G0g" source="Objing">
+            <contents xmi:type="uml:Property" xmi:id="_a_brgLrREe-DKO6kyh3G0g" name="ReceivedEvent">
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_a_brgbrREe-DKO6kyh3G0g" value="Lancer"/>
+            </contents>
+          </eAnnotations>
+        </transition>
+        <transition xmi:id="_a_brgrrREe-DKO6kyh3G0g" source="_a_brebrREe-DKO6kyh3G0g" target="_a_bre7rREe-DKO6kyh3G0g">
+          <eAnnotations xmi:id="_a_brg7rREe-DKO6kyh3G0g" source="Objing">
+            <contents xmi:type="uml:Property" xmi:id="_a_brhLrREe-DKO6kyh3G0g" name="ReceivedEvent">
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_a_brhbrREe-DKO6kyh3G0g" value="Panne"/>
+            </contents>
+          </eAnnotations>
+        </transition>
+        <transition xmi:id="_a_brhrrREe-DKO6kyh3G0g" source="_a_brebrREe-DKO6kyh3G0g" target="_a_brerrREe-DKO6kyh3G0g">
+          <eAnnotations xmi:id="_a_brh7rREe-DKO6kyh3G0g" source="Objing">
+            <contents xmi:type="uml:Property" xmi:id="_a_briLrREe-DKO6kyh3G0g" name="ReceivedEvent">
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_a_bribrREe-DKO6kyh3G0g" value="Détecter mot"/>
+            </contents>
+          </eAnnotations>
+        </transition>
+        <transition xmi:id="_a_brirrREe-DKO6kyh3G0g" name="Transition2" source="_a_brebrREe-DKO6kyh3G0g" target="_a_breLrREe-DKO6kyh3G0g">
+          <eAnnotations xmi:id="_a_bri7rREe-DKO6kyh3G0g" source="Objing">
+            <contents xmi:type="uml:Property" xmi:id="_a_brjLrREe-DKO6kyh3G0g" name="ReceivedEvent">
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_a_brjbrREe-DKO6kyh3G0g" value="Arrêter"/>
+            </contents>
+          </eAnnotations>
+        </transition>
+        <transition xmi:id="_a_brjrrREe-DKO6kyh3G0g" source="_a_brerrREe-DKO6kyh3G0g" target="_a_bre7rREe-DKO6kyh3G0g">
+          <eAnnotations xmi:id="_a_brj7rREe-DKO6kyh3G0g" source="Objing">
+            <contents xmi:type="uml:Property" xmi:id="_a_brkLrREe-DKO6kyh3G0g" name="ReceivedEvent">
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_a_brkbrREe-DKO6kyh3G0g" value="Panne"/>
+            </contents>
+          </eAnnotations>
+        </transition>
+        <transition xmi:id="_a_brkrrREe-DKO6kyh3G0g" source="_a_brerrREe-DKO6kyh3G0g" target="_a_brebrREe-DKO6kyh3G0g">
+          <eAnnotations xmi:id="_a_brk7rREe-DKO6kyh3G0g" source="Objing">
+            <contents xmi:type="uml:Property" xmi:id="_a_brlLrREe-DKO6kyh3G0g" name="ReceivedEvent">
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_a_brlbrREe-DKO6kyh3G0g" value="Ecouter"/>
+            </contents>
+          </eAnnotations>
+        </transition>
+        <transition xmi:id="_a_brlrrREe-DKO6kyh3G0g" name="Transition" source="_a_bre7rREe-DKO6kyh3G0g" target="_a_breLrREe-DKO6kyh3G0g">
+          <eAnnotations xmi:id="_a_brl7rREe-DKO6kyh3G0g" source="Objing">
+            <contents xmi:type="uml:Property" xmi:id="_a_brmLrREe-DKO6kyh3G0g" name="ReceivedEvent">
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_a_brmbrREe-DKO6kyh3G0g" value="Stopper"/>
+            </contents>
+          </eAnnotations>
+        </transition>
+        <transition xmi:id="_a_brmrrREe-DKO6kyh3G0g" name="Transition1" source="_a_bre7rREe-DKO6kyh3G0g" target="_a_brebrREe-DKO6kyh3G0g">
+          <eAnnotations xmi:id="_a_brm7rREe-DKO6kyh3G0g" source="Objing">
+            <contents xmi:type="uml:Property" xmi:id="_a_brnLrREe-DKO6kyh3G0g" name="ReceivedEvent">
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_a_brnbrREe-DKO6kyh3G0g" value="Ecouter"/>
+            </contents>
+          </eAnnotations>
+        </transition>
+      </region>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interaction" xmi:id="_a_brnrrREe-DKO6kyh3G0g" name="Interaction">
+      <eAnnotations xmi:id="_a_brn7rREe-DKO6kyh3G0g" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_a_broLrREe-DKO6kyh3G0g" name="DiagramName">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_a_brobrREe-DKO6kyh3G0g" value="Interaction Sequence diagram"/>
+        </contents>
+      </eAnnotations>
+      <nestedClassifier xmi:type="uml:Collaboration" xmi:id="_a_brorrREe-DKO6kyh3G0g" name="locals"/>
+      <lifeline xmi:id="_a_bro7rREe-DKO6kyh3G0g" name="Lifeline"/>
+      <lifeline xmi:id="_a_brpLrREe-DKO6kyh3G0g" name="Lifeline"/>
+    </packagedElement>
+    <profileApplication xmi:id="_bAurULrREe-DKO6kyh3G0g">
+      <eAnnotations xmi:id="_bAurUbrREe-DKO6kyh3G0g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="default.profile.uml#_bAgB17rREe-DKO6kyh3G0g"/>
+      </eAnnotations>
+      <appliedProfile href="default.profile.uml#_bAgB0LrREe-DKO6kyh3G0g"/>
+    </profileApplication>
+  </uml:Model>
+  <default:create xmi:id="_bAvSYLrREe-DKO6kyh3G0g" base_Operation="_a_brRLrREe-DKO6kyh3G0g"/>
+</xmi:XMI>
