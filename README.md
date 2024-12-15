@@ -83,7 +83,7 @@ Nous avons suivi une **méthode descendante** pour la conception du système.
    Le système a été divisé en parties distinctes :
    - Module de transcription : Gestion du flux audio et conversion de la parole en texte.
    - Module de notifications : Analyse des bruits ambiants et déclenchement d'alertes visuelles.
-   - 
+
 3. **Détails des modules**  
    Nous avons conçu chaque sous-système séparément, c'est-à-dire que le module de transcription n'a pas eu d'impact sur le module de notification et vice-versa.
    La réalisation des diagrammes UML a donné une vision détaillée de chaque fonctionnalité.
