@@ -71,3 +71,25 @@ Le projet est principalement développé en **Java**.
 - **Jodie Monterde** : [GitHub](https://github.com/JoMonterde)
 - **Romain Courbaize** : [GitHub](https://github.com/romaincourbaize)
 - **Maxime Froissant** : [GitHub](https://github.com/froissam)
+
+## Étape de conception
+
+Nous avons suivi une **méthode descendante** pour la conception du système. 
+
+1. **Vue globale du système et analyse des besoins**
+   Nous avons commencé par analyser le système dans son ensemble pour identifier ses principales fonctionnalités et contraintes. Cette étape a permis d'identifier les besoins des utilisateurs.
+2. **Division récursive du système**
+   Le système a été divisé en parties distinctes :
+   - Module de transcription : Gestion du flux audio et conversion de la parole en texte.
+   - Module de notifications : Analyse des bruits ambiants et déclenchement d'alertes visuelles.
+3. **Détails des modules**
+   Nous avons conçu chaque sous-système séparément, c'est-à-dire que le module de transcription n'a pas eu d'impact sur le module de notification et vice-versa.
+   La réalisation des diagrammes UML a donné une vision détaillée de chaque fonctionnalité.
+   Cette étape, nous a demandé un investissement important en termes de temps et de ressources. En effet, nous avons effectué de nombreux ajustements au cours de la conception. La création de certains diagrammes nous a permis d’identifier des erreurs ou des omissions dans les diagrammes précédemment réalisés, ce qui nous a conduit à les modifier pour garantir leur cohérence et leur complétude.
+   Les diagrammes réalisés sont les suivants :
+   - Diagramme de cas d’utilisation
+   - Diagramme de séquence
+   - Diagramme d’état-transition
+   - Diagramme de classes
+5. **Développement**
+   Le squelette du système en Java a été basé sur le diagramme de classe. Certains parties de ce dernier ont été ajoutées après le développement. En effet, un module externe permettant l'analyse du son a été utilisé lors du développement.
