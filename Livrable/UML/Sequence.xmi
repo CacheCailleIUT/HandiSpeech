@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_ClqGwLrVEe-ja9Eohlhprg" name="Sequence">
+  <eAnnotations xmi:id="_ClqGwbrVEe-ja9Eohlhprg" source="Objing">
+    <contents xmi:type="uml:Property" xmi:id="_ClqGwrrVEe-ja9Eohlhprg" name="exporterVersion">
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_ClqGw7rVEe-ja9Eohlhprg" value="3.0.0"/>
+    </contents>
+  </eAnnotations>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_ClqGxLrVEe-ja9Eohlhprg" name="Interaction">
+    <nestedClassifier xmi:type="uml:Collaboration" xmi:id="_ClqGxbrVEe-ja9Eohlhprg" name="locals"/>
+    <lifeline xmi:id="_ClqGxrrVEe-ja9Eohlhprg" name="Utilisateur" coveredBy="_ClqGy7rVEe-ja9Eohlhprg _ClqG2LrVEe-ja9Eohlhprg"/>
+    <lifeline xmi:id="_ClqGx7rVEe-ja9Eohlhprg" name="Interface de l'application" coveredBy="_ClqGybrVEe-ja9Eohlhprg _ClqGyrrVEe-ja9Eohlhprg _ClqGzLrVEe-ja9Eohlhprg _ClqG0brVEe-ja9Eohlhprg _ClqG1brVEe-ja9Eohlhprg _ClqG2brVEe-ja9Eohlhprg _ClqG2rrVEe-ja9Eohlhprg"/>
+    <lifeline xmi:id="_ClqGyLrVEe-ja9Eohlhprg" name="Système de retranscription" coveredBy="_ClqG0rrVEe-ja9Eohlhprg _ClqG07rVEe-ja9Eohlhprg _ClqG1LrVEe-ja9Eohlhprg"/>
+    <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_ClqGybrVEe-ja9Eohlhprg" covered="_ClqGx7rVEe-ja9Eohlhprg" start="_ClqGyrrVEe-ja9Eohlhprg" finish="_ClqG2rrVEe-ja9Eohlhprg"/>
+    <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_ClqGyrrVEe-ja9Eohlhprg" covered="_ClqGx7rVEe-ja9Eohlhprg"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ClqGy7rVEe-ja9Eohlhprg" covered="_ClqGxrrVEe-ja9Eohlhprg" message="_ClqG27rVEe-ja9Eohlhprg"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ClqGzLrVEe-ja9Eohlhprg" covered="_ClqGx7rVEe-ja9Eohlhprg" message="_ClqG27rVEe-ja9Eohlhprg"/>
+    <fragment xmi:type="uml:CombinedFragment" xmi:id="_ClqGzbrVEe-ja9Eohlhprg" name="CombinedFragment" interactionOperator="loop">
+      <operand xmi:id="_ClqGzrrVEe-ja9Eohlhprg">
+        <guard xmi:id="_ClqGz7rVEe-ja9Eohlhprg">
+          <specification xmi:type="uml:LiteralString" xmi:id="_ClqG0LrVEe-ja9Eohlhprg" value="Retranscription activée"/>
+        </guard>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ClqG0brVEe-ja9Eohlhprg" covered="_ClqGx7rVEe-ja9Eohlhprg" message="_ClqG3LrVEe-ja9Eohlhprg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ClqG0rrVEe-ja9Eohlhprg" covered="_ClqGyLrVEe-ja9Eohlhprg" message="_ClqG3LrVEe-ja9Eohlhprg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_ClqG07rVEe-ja9Eohlhprg" covered="_ClqGyLrVEe-ja9Eohlhprg" start="_ClqG0rrVEe-ja9Eohlhprg" finish="_ClqG1LrVEe-ja9Eohlhprg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ClqG1LrVEe-ja9Eohlhprg" covered="_ClqGyLrVEe-ja9Eohlhprg" message="_ClqG3brVEe-ja9Eohlhprg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ClqG1brVEe-ja9Eohlhprg" covered="_ClqGx7rVEe-ja9Eohlhprg" message="_ClqG3brVEe-ja9Eohlhprg"/>
+        <fragment xmi:type="uml:CombinedFragment" xmi:id="_ClqG1rrVEe-ja9Eohlhprg" name="CombinedFragment" interactionOperator="break">
+          <operand xmi:id="_ClqG17rVEe-ja9Eohlhprg">
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ClqG2LrVEe-ja9Eohlhprg" covered="_ClqGxrrVEe-ja9Eohlhprg" message="_ClqG3rrVEe-ja9Eohlhprg"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ClqG2brVEe-ja9Eohlhprg" covered="_ClqGx7rVEe-ja9Eohlhprg" message="_ClqG3rrVEe-ja9Eohlhprg"/>
+            <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_ClqG2rrVEe-ja9Eohlhprg" covered="_ClqGx7rVEe-ja9Eohlhprg"/>
+          </operand>
+        </fragment>
+      </operand>
+    </fragment>
+    <message xmi:id="_ClqG27rVEe-ja9Eohlhprg" name="Activer la retranscription" messageSort="asynchCall" receiveEvent="_ClqGzLrVEe-ja9Eohlhprg" sendEvent="_ClqGy7rVEe-ja9Eohlhprg"/>
+    <message xmi:id="_ClqG3LrVEe-ja9Eohlhprg" name="écouter" receiveEvent="_ClqG0rrVEe-ja9Eohlhprg" sendEvent="_ClqG0brVEe-ja9Eohlhprg"/>
+    <message xmi:id="_ClqG3brVEe-ja9Eohlhprg" name="Retranscrire" messageSort="reply" receiveEvent="_ClqG1brVEe-ja9Eohlhprg" sendEvent="_ClqG1LrVEe-ja9Eohlhprg"/>
+    <message xmi:id="_ClqG3rrVEe-ja9Eohlhprg" name="Arrêter la retranscription" messageSort="asynchCall" receiveEvent="_ClqG2brVEe-ja9Eohlhprg" sendEvent="_ClqG2LrVEe-ja9Eohlhprg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_ClqG37rVEe-ja9Eohlhprg" name="Interaction1">
+    <nestedClassifier xmi:type="uml:Collaboration" xmi:id="_ClqG4LrVEe-ja9Eohlhprg" name="locals"/>
+    <lifeline xmi:id="_ClqG4brVEe-ja9Eohlhprg" name="Interface de l'application" coveredBy="_ClqG9LrVEe-ja9Eohlhprg"/>
+    <lifeline xmi:id="_ClqG4rrVEe-ja9Eohlhprg" name="Système" coveredBy="_ClqG6rrVEe-ja9Eohlhprg _ClqG67rVEe-ja9Eohlhprg _ClqG7LrVEe-ja9Eohlhprg _ClqG7brVEe-ja9Eohlhprg _ClqG8rrVEe-ja9Eohlhprg _ClqG87rVEe-ja9Eohlhprg"/>
+    <lifeline xmi:id="_ClqG47rVEe-ja9Eohlhprg" name="utilisateur" coveredBy="_ClqG9brVEe-ja9Eohlhprg _ClqG9rrVEe-ja9Eohlhprg _ClqG97rVEe-ja9Eohlhprg"/>
+    <lifeline xmi:id="_ClqG5LrVEe-ja9Eohlhprg" name="Environnement" coveredBy="_ClqG6brVEe-ja9Eohlhprg"/>
+    <fragment xmi:type="uml:CombinedFragment" xmi:id="_ClqG5brVEe-ja9Eohlhprg" name="CombinedFragment" interactionOperator="loop">
+      <operand xmi:id="_ClqG5rrVEe-ja9Eohlhprg">
+        <guard xmi:id="_ClqG57rVEe-ja9Eohlhprg">
+          <specification xmi:type="uml:LiteralString" xmi:id="_ClqG6LrVEe-ja9Eohlhprg" value="Application en cours d'execution"/>
+        </guard>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ClqG6brVEe-ja9Eohlhprg" covered="_ClqG5LrVEe-ja9Eohlhprg" message="_ClqG-LrVEe-ja9Eohlhprg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ClqG6rrVEe-ja9Eohlhprg" covered="_ClqG4rrVEe-ja9Eohlhprg" message="_ClqG-LrVEe-ja9Eohlhprg"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_ClqG67rVEe-ja9Eohlhprg" covered="_ClqG4rrVEe-ja9Eohlhprg" start="_ClqG6rrVEe-ja9Eohlhprg" finish="_ClqG8rrVEe-ja9Eohlhprg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ClqG7LrVEe-ja9Eohlhprg" covered="_ClqG4rrVEe-ja9Eohlhprg" message="_ClqG-brVEe-ja9Eohlhprg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ClqG7brVEe-ja9Eohlhprg" covered="_ClqG4rrVEe-ja9Eohlhprg" message="_ClqG-brVEe-ja9Eohlhprg"/>
+        <fragment xmi:type="uml:CombinedFragment" xmi:id="_ClqG7rrVEe-ja9Eohlhprg" name="CombinedFragment" interactionOperator="opt">
+          <operand xmi:id="_ClqG77rVEe-ja9Eohlhprg">
+            <guard xmi:id="_ClqG8LrVEe-ja9Eohlhprg">
+              <specification xmi:type="uml:LiteralString" xmi:id="_ClqG8brVEe-ja9Eohlhprg" value="Bruit identifié"/>
+            </guard>
+            <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_ClqG8rrVEe-ja9Eohlhprg" covered="_ClqG4rrVEe-ja9Eohlhprg"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ClqG87rVEe-ja9Eohlhprg" covered="_ClqG4rrVEe-ja9Eohlhprg" message="_ClqG-rrVEe-ja9Eohlhprg"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ClqG9LrVEe-ja9Eohlhprg" covered="_ClqG4brVEe-ja9Eohlhprg" message="_ClqG-rrVEe-ja9Eohlhprg"/>
+          </operand>
+        </fragment>
+      </operand>
+    </fragment>
+    <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_ClqG9brVEe-ja9Eohlhprg" covered="_ClqG47rVEe-ja9Eohlhprg"/>
+    <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_ClqG9rrVEe-ja9Eohlhprg" covered="_ClqG47rVEe-ja9Eohlhprg" start="_ClqG9brVEe-ja9Eohlhprg" finish="_ClqG97rVEe-ja9Eohlhprg"/>
+    <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_ClqG97rVEe-ja9Eohlhprg" covered="_ClqG47rVEe-ja9Eohlhprg"/>
+    <message xmi:id="_ClqG-LrVEe-ja9Eohlhprg" name="Détection de bruit" messageSort="asynchCall" receiveEvent="_ClqG6rrVEe-ja9Eohlhprg" sendEvent="_ClqG6brVEe-ja9Eohlhprg"/>
+    <message xmi:id="_ClqG-brVEe-ja9Eohlhprg" name="Analyse du bruit" messageSort="asynchCall" receiveEvent="_ClqG7brVEe-ja9Eohlhprg" sendEvent="_ClqG7LrVEe-ja9Eohlhprg"/>
+    <message xmi:id="_ClqG-rrVEe-ja9Eohlhprg" name="Notifier" messageSort="asynchCall" receiveEvent="_ClqG9LrVEe-ja9Eohlhprg" sendEvent="_ClqG87rVEe-ja9Eohlhprg"/>
+  </packagedElement>
+</uml:Model>

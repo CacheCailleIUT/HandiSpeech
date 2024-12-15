@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_86X-8LrUEe-ja9Eohlhprg" name="Cas utilisation">
+  <eAnnotations xmi:id="_86X-8brUEe-ja9Eohlhprg" source="Objing">
+    <contents xmi:type="uml:Property" xmi:id="_86X-8rrUEe-ja9Eohlhprg" name="exporterVersion">
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_86YmALrUEe-ja9Eohlhprg" value="3.0.0"/>
+    </contents>
+  </eAnnotations>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_86YmAbrUEe-ja9Eohlhprg" name="Utilisateur"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_86YmArrUEe-ja9Eohlhprg" memberEnd="_86YmA7rUEe-ja9Eohlhprg _86YmBbrUEe-ja9Eohlhprg" navigableOwnedEnd="_86YmA7rUEe-ja9Eohlhprg">
+    <ownedEnd xmi:id="_86YmA7rUEe-ja9Eohlhprg" visibility="public" type="_86YmFrrUEe-ja9Eohlhprg" isUnique="false" association="_86YmArrUEe-ja9Eohlhprg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_86YmBLrUEe-ja9Eohlhprg"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_86YmBbrUEe-ja9Eohlhprg" visibility="public" type="_86YmAbrUEe-ja9Eohlhprg" isUnique="false" association="_86YmArrUEe-ja9Eohlhprg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_86YmBrrUEe-ja9Eohlhprg"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_86YmB7rUEe-ja9Eohlhprg" memberEnd="_86YmCLrUEe-ja9Eohlhprg _86YmCrrUEe-ja9Eohlhprg" navigableOwnedEnd="_86YmCLrUEe-ja9Eohlhprg">
+    <ownedEnd xmi:id="_86YmCLrUEe-ja9Eohlhprg" visibility="public" type="_86YmM7rUEe-ja9Eohlhprg" isUnique="false" association="_86YmB7rUEe-ja9Eohlhprg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_86YmCbrUEe-ja9Eohlhprg"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_86YmCrrUEe-ja9Eohlhprg" visibility="public" type="_86YmAbrUEe-ja9Eohlhprg" isUnique="false" association="_86YmB7rUEe-ja9Eohlhprg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_86YmC7rUEe-ja9Eohlhprg"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_86YmDLrUEe-ja9Eohlhprg" memberEnd="_86YmDbrUEe-ja9Eohlhprg _86YmD7rUEe-ja9Eohlhprg" navigableOwnedEnd="_86YmDbrUEe-ja9Eohlhprg">
+    <ownedEnd xmi:id="_86YmDbrUEe-ja9Eohlhprg" visibility="public" type="_86YmPLrUEe-ja9Eohlhprg" isUnique="false" association="_86YmDLrUEe-ja9Eohlhprg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_86YmDrrUEe-ja9Eohlhprg"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_86YmD7rUEe-ja9Eohlhprg" visibility="public" type="_86YmAbrUEe-ja9Eohlhprg" isUnique="false" association="_86YmDLrUEe-ja9Eohlhprg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_86YmELrUEe-ja9Eohlhprg"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_86YmEbrUEe-ja9Eohlhprg" memberEnd="_86YmErrUEe-ja9Eohlhprg _86YmFLrUEe-ja9Eohlhprg" navigableOwnedEnd="_86YmErrUEe-ja9Eohlhprg">
+    <ownedEnd xmi:id="_86YmErrUEe-ja9Eohlhprg" visibility="public" type="_86YmJLrUEe-ja9Eohlhprg" isUnique="false" association="_86YmEbrUEe-ja9Eohlhprg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_86YmE7rUEe-ja9Eohlhprg"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_86YmFLrUEe-ja9Eohlhprg" visibility="public" type="_86YmAbrUEe-ja9Eohlhprg" isUnique="false" association="_86YmEbrUEe-ja9Eohlhprg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_86YmFbrUEe-ja9Eohlhprg"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_86YmFrrUEe-ja9Eohlhprg" name="Configurer l'application">
+    <ownedComment xmi:id="_86YmF7rUEe-ja9Eohlhprg">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_86YmGLrUEe-ja9Eohlhprg">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_86YmGbrUEe-ja9Eohlhprg">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_86YmGrrUEe-ja9Eohlhprg">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_86YmG7rUEe-ja9Eohlhprg">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_86YmHLrUEe-ja9Eohlhprg">
+      <body>...</body>
+    </ownedComment>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_86YmHbrUEe-ja9Eohlhprg" name="Activer la retranscription">
+    <ownedComment xmi:id="_86YmHrrUEe-ja9Eohlhprg">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_86YmH7rUEe-ja9Eohlhprg">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_86YmILrUEe-ja9Eohlhprg">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_86YmIbrUEe-ja9Eohlhprg">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_86YmIrrUEe-ja9Eohlhprg">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_86YmI7rUEe-ja9Eohlhprg">
+      <body>...</body>
+    </ownedComment>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_86YmJLrUEe-ja9Eohlhprg" name="Arrêter la retranscription">
+    <ownedComment xmi:id="_86YmJbrUEe-ja9Eohlhprg">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_86YmJrrUEe-ja9Eohlhprg">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_86YmJ7rUEe-ja9Eohlhprg">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_86YmKLrUEe-ja9Eohlhprg">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_86YmKbrUEe-ja9Eohlhprg">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_86YmKrrUEe-ja9Eohlhprg">
+      <body>...</body>
+    </ownedComment>
+    <include xmi:id="_86YmK7rUEe-ja9Eohlhprg" name="UseCaseDependency" addition="_86YmHbrUEe-ja9Eohlhprg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_86YmLLrUEe-ja9Eohlhprg" name="Lire">
+    <ownedComment xmi:id="_86YmLbrUEe-ja9Eohlhprg">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_86YmLrrUEe-ja9Eohlhprg">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_86YmL7rUEe-ja9Eohlhprg">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_86YmMLrUEe-ja9Eohlhprg">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_86YmMbrUEe-ja9Eohlhprg">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_86YmMrrUEe-ja9Eohlhprg">
+      <body>...</body>
+    </ownedComment>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_86YmM7rUEe-ja9Eohlhprg" name="Lire la retranscription">
+    <ownedComment xmi:id="_86YmNLrUEe-ja9Eohlhprg">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_86YmNbrUEe-ja9Eohlhprg">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_86YmNrrUEe-ja9Eohlhprg">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_86YmN7rUEe-ja9Eohlhprg">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_86YmOLrUEe-ja9Eohlhprg">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_86YmObrUEe-ja9Eohlhprg">
+      <body>...</body>
+    </ownedComment>
+    <generalization xmi:id="_86YmOrrUEe-ja9Eohlhprg" general="_86YmLLrUEe-ja9Eohlhprg"/>
+    <include xmi:id="_86YmO7rUEe-ja9Eohlhprg" name="UseCaseDependency" addition="_86YmHbrUEe-ja9Eohlhprg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_86YmPLrUEe-ja9Eohlhprg" name="Lire une notification">
+    <ownedComment xmi:id="_86YmPbrUEe-ja9Eohlhprg">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_86YmPrrUEe-ja9Eohlhprg">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_86YmP7rUEe-ja9Eohlhprg">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_86YmQLrUEe-ja9Eohlhprg">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_86YmQbrUEe-ja9Eohlhprg">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_86YmQrrUEe-ja9Eohlhprg">
+      <body>...</body>
+    </ownedComment>
+    <generalization xmi:id="_86YmQ7rUEe-ja9Eohlhprg" general="_86YmLLrUEe-ja9Eohlhprg"/>
+  </packagedElement>
+</uml:Model>
